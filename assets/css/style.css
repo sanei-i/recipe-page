@@ -1,4 +1,40 @@
 /* 
+base style
+ */
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 700;
+}
+@font-face {
+    font-family: "YoungSerif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+    font-size: 16px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1, h2, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
 footer
  */
 .attribution {
