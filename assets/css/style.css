@@ -20,6 +20,7 @@ body {
     color: hsl(30, 10%, 34%);
     font-family: "Outfit", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
     font-size: 16px;
+    line-height: 1.5;
 }
 main {
     display: flex;
@@ -28,9 +29,149 @@ main {
     align-items: center;
     min-height: 100vh;
 }
-h1, h2, p, ul, ol {
+
+/* 
+recipe page
+ */
+article {
+    width: 375px;
+    background-color: hsl(0, 0%, 100%);    
+}
+img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+h1 {
     margin: 0;
-    padding: 0;
+    font-family: "YoungSerif";
+    font-size: 36px;
+    color: hsl(24, 5%, 18%);
+    line-height: 1;
+}
+h2 {
+    margin: 0;
+    font-family: "YoungSerif";
+    font-size: 28px;
+    color: hsl(14, 45%, 36%);
+}
+h3 {
+    margin: 0;
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+p {
+    margin: 0;
+}
+header {
+    margin: 0 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+section {
+    margin: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+div {
+    margin: 0 32px 32px;
+}
+section + section {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin-top: 32px;
+    padding-top: 32px;
+}
+
+
+/* 
+preparation time, ingredients
+*/
+ul {
+    margin: 0;
+    padding: 0 0 0 4px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.preparationtime {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+.ingredient-item,
+.preparationtime-item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.preparationtime-item::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: hsl(332, 51%, 32%);
+    flex-shrink: 0;
+}
+.ingredient-item::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: hsl(14, 45%, 36%);
+    flex-shrink: 0;
+}
+
+
+/* 
+instruction 
+*/
+ol {
+    margin: 0;
+    padding: 0 0 0 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+.instruction-item {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 8px;
+}
+.number {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+
+/* 
+nutrition
+*/
+.nutrition-table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+th {
+    padding: 0 0 16px 32px;
+    font-weight: 400;
+    text-align: left;
+}
+td {
+    width: 50%;
+    padding: 0 0 16px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+tr + tr th,
+tr + tr td {
+    padding-top: 16px;
+    border-top: 1px solid hsl(30, 18%, 87%);
 }
 
 
