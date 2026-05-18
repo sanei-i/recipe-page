@@ -194,11 +194,11 @@ responsive
         padding-block: 40px;
     }
     article {
-        border-radius: 10px;
+        border-radius: 20px;
     }
     img {
         margin-top: 40px;
-        border-radius: 10px;
+        border-radius: 12px;
     }
     h1 {
         font-size: 40px;
